@@ -6,42 +6,61 @@
         <title>VideoHub</title>
         <link rel="stylesheet" type="text/css" href="styles.css">
     </head>
-    <body>
 
+    <body>
+        
         <div id="header">
 
 
             <div id="title">
 
-                <div id="lines">
+                <div id="lines" onclick="menuOpen()" >
                     ☰
                 </div>
-
+                
                 <a id="words" href="">
-
+                    
                     <div id="porn">
                         Video
                     </div>
-
+                    
                     <div id="hub">
                         hub
                     </div>
-
+                    
                 </a>
+                
+            </div>
+            
+            
+            <img src="Images/search.png" id="search_ico">
+        </div>
+        
+        <div id="page">
+            
+            <div class="orange_line" id="l_line">
 
+                <div id="menu" style="opacity: 0;">
+
+                    <div id="tags">
+                        Категории:
+                        <ul>
+                            <li class="tag" onclick="hideOtherTags('card_title dogs')">Собачки</li>
+                            <li class="tag" onclick="hideOtherTags('card_title cats')">Кошечки</li>
+                            <li class="tag" onclick="hideOtherTags('card_title math')">Учёба</li>
+                            <li class="tag" onclick="hideOtherTags('card_title food')">Еда</li>
+                        </ul>
+                    </div>
+                    
+                </div>
+                
             </div>
 
-
-            <img src="search.png" id="search_ico">
-        </div>
-
-        <div id="page">
-            <div class="orange_line" id="l_line"></div>
             <div id="content">
 
                 <div class="card">
 
-                    <div class="card_title" title="Очень длинная нарезка смешных собак с очень длинным названием">
+                    <div class="card_title dogs" title="Очень длинная нарезка смешных собак с очень длинным названием">
                         Очень длинная нарезка смешных собак с очень длинным названием
                     </div>
 
@@ -53,7 +72,7 @@
 
                 <div class="card">
 
-                    <div class="card_title" title='Как приготовить бутер с колбасой?'>
+                    <div class="card_title food" title='Как приготовить бутер с колбасой?'>
                         Как приготовить бутер с колбасой
                     </div>
 
@@ -65,7 +84,7 @@
 
                 <div class="card">
 
-                    <div class="card_title" title='Странная "развивающая" хрень для детей'>
+                    <div class="card_title kids" title='Странная "развивающая" хрень для детей'>
                         Странная развивающая хрень для детей
                     </div>
 
@@ -77,7 +96,7 @@
 
                 <div class="card">
 
-                    <div class="card_title" title="Красивые собачки">
+                    <div class="card_title dogs" title="Красивые собачки">
                         Красивые собачки
                     </div>
 
@@ -89,7 +108,7 @@
 
                 <div class="card">
 
-                    <div class="card_title" title="Подборка милых котиков">
+                    <div class="card_title cats" title="Подборка милых котиков">
                         Подборка милых котиков
                     </div>
 
@@ -101,7 +120,7 @@
 
                 <div class="card">
 
-                    <div class="card_title" title="Что такое функция? Объяснение наглядно, с примерами">
+                    <div class="card_title math" title="Что такое функция? Объяснение наглядно, с примерами">
                         Что такое функция? Объяснение наглядно, с примерами
                     </div>
 
@@ -113,7 +132,7 @@
 
                 <div class="card">
 
-                    <div class="card_title" title="Как варить рис, чтобы он получился идеальным">
+                    <div class="card_title food" title="Как варить рис, чтобы он получился идеальным">
                         Как варить рис, чтобы он получился идеальным
                     </div>
 
@@ -125,7 +144,7 @@
 
                 <div class="card">
 
-                    <div class="card_title" title="Как подключить беспроводные наушники к ноутбуку?">
+                    <div class="card_title tech" title="Как подключить беспроводные наушники к ноутбуку?">
                         Как подключить беспроводные наушники к ноутбуку?
                     </div>
 
@@ -136,7 +155,9 @@
                 </div>
 
             </div>
+
             <div class="orange_line" id="r_line"></div>
+            
         </div>
 
 
