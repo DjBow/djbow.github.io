@@ -1,7 +1,7 @@
 /* Высота 2к пикселей, чтобы проверить,
  остаётся ли верхнее меню с лого всегда 
  сверху при прокрутке */
-body {
+ body {
     background: #1b1b1b;
     margin: 0;
     height: 100%;
@@ -87,6 +87,7 @@ body {
     width: 350px;
     height: 100vh;
     min-width: 10px;
+
 }
 
 #l_line {
@@ -106,10 +107,6 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     color: #fff;
     font-size: 20px;
-}
-
-.tag {
-    
 }
 
 ul {
@@ -184,4 +181,3 @@ li:active {
     height: 100%;
     object-fit: cover;
 }
-
