@@ -28,11 +28,12 @@
     position: fixed;
     width: 25vh;
     height: 100%;
-    background-color: #181818;
-    transition: 0.2s;
+    background-color: #292929;
+    transition: all 0.2s ease-in-out;
     z-index: 1;
     box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.4);
-}
+    min-width: 150px;
+    }
 
 #words {
     color: white;
@@ -90,14 +91,6 @@
 
 }
 
-#l_line {
-    border-right: 3px solid #F28705;
-}
-
-
-#r_line {
-    border-left: 3px solid #F28705;
-}
 
 #tags {
     position: absolute;
@@ -107,6 +100,7 @@
     font-family: Arial, Helvetica, sans-serif;
     color: #fff;
     font-size: 20px;
+    margin-top: 30%;
 }
 
 ul {
@@ -135,7 +129,10 @@ li:active {
     flex-wrap: wrap;
     align-content: flex-start;
     justify-content: center;
-    margin-top: 75px;
+    margin-top: 60px;
+    border-left: solid #F28705;
+    border-right: solid #F28705;
+    padding-top: 10px;
 }
 
 .card {
