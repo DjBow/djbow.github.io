@@ -1,11 +1,14 @@
 function menuOpen() {
     menu = document.getElementById("menu")
+
     if (menu.style.opacity == "0") {
         menu.style = "opacity: 1;"
+        menu.style.visibility = "visible"
+
     }
     else {
-
         menu.style = "opacity: 0;"
+        menu.style.visibility = "hidden"
     }
 }
 
@@ -21,4 +24,19 @@ function hideOtherTags(tag) {
         }
     }
 }
+
+function searchOpen() {
+    icon = document.getElementById("search_ico")
+
+    if (icon.style.opacity == "0") {
+        icon.style = "opacity: 1;"
+        icon.style.visibility = "visible"
+    }
+    else {
+        icon.style = "opacity: 0;"
+        icon.style.visibility = "hidden"
+    }
+
+}
+
 
